@@ -48,6 +48,20 @@ Simple and inefficient MIPS  processor
 - carryFlag;
 - overflowFlag;
 
+## program asm
+
+```bash
+ld r0,count ; load the value of count into r0
+ldi r1,#0 ; initialize r1 to 0
+back: 
+    add r1,r1,#1 ; add one to the value in r1
+    cmp r1,r0 ; compare iteration number (r1) to count (r0)
+    ble back ; loop if r1 <= r0
+    hlt ; otherwise, stop execution
+count:
+    .word 0xA
+```
+
 ## run
 
 ```bash
