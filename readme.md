@@ -1,4 +1,4 @@
-Simple and inefficient MIPS  processor
+Simple MIPS  processor
 ---
 
 ## registers and memory
