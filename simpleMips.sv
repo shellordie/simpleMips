@@ -1,4 +1,4 @@
-module Vespa();
+module simpleMips();
 
 // 
 reg [31:0] registerFile [31:0];
